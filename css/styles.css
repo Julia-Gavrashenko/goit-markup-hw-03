@@ -1,0 +1,223 @@
+:root {
+  /* Шрифти */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+
+  /* Кольори тексту*/
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --light-text-color: #ffffff;
+  --black-text-color: #000000;
+
+  /* кольори фону */
+  --main-background-color: #f5f5f5;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2196f3;
+  --dark-fill-color: #2f303a;
+  --light-fill-color: #ffffff;
+}
+
+/* основні стилі сторінки */
+.page {
+  font-family: var(--main-font);
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+/* загальні налаштування стилю */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list,
+.list-button,
+.list-projects {
+  list-style: none;
+}
+
+/* Стилі хедеру */
+.header {
+  background-color: var(--light-fill-color);
+}
+
+.header-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+  text-decoration: none;
+}
+
+.header-web {
+  color: var(--accent-text-color);
+}
+
+.header .list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-text-color);
+}
+
+.current {
+  color: var(--accent-text-color);
+}
+
+
+/* Стилі сторінки "студія" */
+/*  Стилі секції "hero" */
+.hero {
+  background-color: var(--dark-fill-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--light-text-color);
+  background-color: var(--accent-background-color);
+  cursor: pointer;
+}
+
+/* Стилі секції "особливості" */
+.feature-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.feature-subtitle {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+/* Стилі секції "чим ми займаємось" */
+.title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* Стилі секції "наша команда" */
+.third-section {
+  background-color: var(--secondary-background-color);
+}
+
+.description {
+  background-color: var(--light-fill-color);
+}
+
+.list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Стилі сторінки "Портфоліо" */
+
+.list-button .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  cursor: pointer;
+}
+
+.list-button .button:hover,
+.list-button .button:focus {
+  background-color: var(--accent-background-color);
+  color: var(--light-text-color);
+}
+
+.projests-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.projects-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.projects-text {
+  background-color: var(--light-fill-color);
+}
+
+/* Стилі футеру */
+.footer {
+  background-color: var(--dark-fill-color);
+}
+
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--light-fill-color);
+  text-decoration: none;
+}
+
+.footer-web {
+  color: var(--accent-text-color);
+}
+
+.addres {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.addres-text {
+  color: var(--light-text-color);
+}
+
+.addres .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.addres .link:hover,
+.addres .link:focus {
+  color: var(--accent-text-color);
+}
