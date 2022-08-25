@@ -18,26 +18,49 @@
   --light-fill-color: #ffffff;
 }
 
-/* main style settings */
+/* base styles */
 .page {
   font-family: var(--main-font);
   background-color: var(--main-background-color);
   color: var(--main-text-color);
 }
 
+/* reset */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 .link {
   text-decoration: none;
   color: currentColor;
 }
-.list,
-.list-button,
-.list-projects {
+
+.list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  outline: 2px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  padding-left: 15px;
 }
 
 /* header styles */
 .header {
   background-color: var(--light-fill-color);
+}
+
+.header-container {
+  display: flex;
 }
 
 .header-logo {
@@ -69,7 +92,6 @@
 .current {
   color: var(--accent-text-color);
 }
-
 
 /* Studio page styles */
 /*  hero section styles */
@@ -160,8 +182,8 @@
   cursor: pointer;
 }
 
-.list-button .button:hover,
-.list-button .button:focus {
+.list .button:hover,
+.list .button:focus {
   background-color: var(--accent-background-color);
   color: var(--light-text-color);
 }
