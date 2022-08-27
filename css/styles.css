@@ -48,9 +48,9 @@ p {
   outline: 2px solid red;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
+
   padding-right: 15px;
-  padding-bottom: 94px;
+
   padding-left: 15px;
 }
 
@@ -59,11 +59,13 @@ p {
   background-color: var(--light-fill-color);
 }
 
-.header-container {
+.main-nav {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
+  margin-right: 93px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -77,52 +79,50 @@ p {
   color: var(--accent-text-color);
 }
 
-.header .list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-}
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-text-color);
+}
+
+.header .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .current {
   color: var(--accent-text-color);
 }
 
-
-
-.site-nav {display: flex;}
-
-.site-nav .list-item {
-  outline: 1px solid red;}
-
+/* navigation */
+.site-nav,
+.site-info {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+/* .site-nav .list-item {
+  outline: 1px solid red;
+}
+.site-info .list-item {
+  outline: 1px solid red;
+} */
 .site-nav .list-item:not(:last-child) {
-  margin-right: 50px;}
+  margin-right: 50px;
+}
 
-  .site-nav .link {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+/* contacts */
+.site-info .list-item:not(:last-child) {
+  margin-right: 50px;
+}
 
-  .site-info {
-    display: flex;
-  }
-
-     .site-info .list-item {
-      outline: 1px solid red;
-     }
-
-            .site-info .list-item:not(:last-child) {
-              margin-right: 50px;
-            }
-
-  
-  
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
 
 /* Studio page styles */
 /*  hero section styles */
@@ -130,7 +130,12 @@ p {
   background-color: var(--dark-fill-color);
 }
 
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -138,9 +143,12 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-text-color);
+  outline: 1px solid red;
 }
 
 .hero-button {
+  
+    align-items: center;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -153,6 +161,10 @@ p {
 }
 
 /* section feature styles */
+ .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+} 
 .feature-title {
   font-size: 14px;
   line-height: calc(16 / 14);
