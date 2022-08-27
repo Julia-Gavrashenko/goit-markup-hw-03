@@ -147,8 +147,13 @@ p {
 }
 
 .hero-button {
-  
-    align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+  min-height: 50px;
+  border: 0;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -158,13 +163,16 @@ p {
   color: var(--light-text-color);
   background-color: var(--accent-background-color);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* section feature styles */
- .section {
+.section {
+  outline: 1px solid red;
   padding-top: 94px;
   padding-bottom: 94px;
-} 
+}
 .feature-title {
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -178,13 +186,39 @@ p {
   letter-spacing: 0.03em;
 }
 
+.feature-list {
+  outline: 1px solid red;
+  display: flex;
+  
+}
+
+/* .feature-list > .feature-item {
+  outline: 1px solid teal;
+} */
+
+.feature-list>.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* doings section styles */
-.title {
+
+.doings{
+  padding-top: 0;
+}
+.doings-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.doings-list {
+  display: flex;
+}
+
+.doings-list> .doings-item:not(:last-child){
+margin-right: 30px;
 }
 
 /* team section styles */
