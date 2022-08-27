@@ -93,6 +93,37 @@ p {
   color: var(--accent-text-color);
 }
 
+
+
+.site-nav {display: flex;}
+
+.site-nav .list-item {
+  outline: 1px solid red;}
+
+.site-nav .list-item:not(:last-child) {
+  margin-right: 50px;}
+
+  .site-nav .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .site-info {
+    display: flex;
+  }
+
+     .site-info .list-item {
+      outline: 1px solid red;
+     }
+
+            .site-info .list-item:not(:last-child) {
+              margin-right: 50px;
+            }
+
+  
+  
+
 /* Studio page styles */
 /*  hero section styles */
 .hero {
