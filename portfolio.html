@@ -53,15 +53,18 @@
     <!--  portfolio page sections -->
     <main>
       <section class="section">
-        <h1 hidden>Наші пропозиції</h1>
-        <ul class="list">
-          <li><button class="button" type="button">Усі</button></li>
-          <li><button class="button" type="button">Веб-сайти</button></li>
-          <li><button class="button" type="button">Додатки</button></li>
-          <li><button class="button" type="button">Дизайн</button></li>
-          <li><button class="button" type="button">Маркетинг</button></li>
+        <div class="container button-container">
+        <h1 class="visually-hidden">Наші пропозиції</h1>
+        
+        
+        <ul class="button-list list">
+          <li class="portfolio-button"><button class="button" type="button">Усі</button></li>
+          <li class="portfolio-button"><button class="button" type="button">Веб-сайти</button></li>
+          <li class="portfolio-button"><button class="button" type="button">Додатки</button></li>
+          <li class="portfolio-button"><button class="button" type="button">Дизайн</button></li>
+          <li class="portfolio-button"><button class="button" type="button">Маркетинг</button></li>
         </ul>
-
+</div>
         <ul class="list">
           <li class="projects-item">
             <img
@@ -190,22 +193,24 @@
 
     <!-- footer -->
     <footer class="footer">
-      <a class="footer-logo" href="" lang="en">
-        <span class="footer-web">Web</span>Studio
-      </a>
-      <address class="addres">
-        <p class="addres-text">м. Київ, пр-т Лесі Українки, 26</p>
-        <ul class="list">
-          <li>
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container footer-container">
+        <a class="footer-logo" href="" lang="en">
+          <span class="footer-web">Web</span>Studio
+        </a>
+    
+    
+        <address class="addres">
+          <p class="addres-text">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="list">
+            <li class="footer-mail">
+              <a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li>
+              <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
