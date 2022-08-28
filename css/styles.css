@@ -16,6 +16,7 @@
   --accent-background-color: #2196f3;
   --dark-fill-color: #2f303a;
   --light-fill-color: #ffffff;
+  --light-border-color: #eeeeee;
 }
 
 /* base styles */
@@ -33,11 +34,11 @@ p {
   margin: 0;
 }
 
- img {
-  display:block;
+img {
+  display: block;
   max-width: 100%;
   height: auto;
-} 
+}
 .link {
   text-decoration: none;
   color: currentColor;
@@ -50,27 +51,30 @@ p {
 }
 .container {
   width: 1200px;
- outline: 2px solid red;  
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.visually-hidden{
+.visually-hidden {
   position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header styles */
+
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
 .header {
   background-color: var(--light-fill-color);
 }
@@ -120,12 +124,11 @@ p {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-/* .site-nav .list-item {
-  outline: 1px solid red;
-}
+
 .site-info .list-item {
-  outline: 1px solid red;
-} */
+  color: var(--main-text-color);
+}
+
 .site-nav .list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -151,6 +154,9 @@ p {
   padding-bottom: 200px;
 }
 .hero-title {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -159,7 +165,6 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-text-color);
-  outline: 1px solid red;
 }
 
 .hero-button {
@@ -187,7 +192,6 @@ p {
 
 /* section feature styles */
 .section {
-  outline: 1px solid red;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -205,13 +209,8 @@ p {
 }
 
 .feature-list {
-  outline: 1px solid red;
   display: flex;
 }
-
-/* .feature-list > .feature-item {
-  outline: 1px solid teal;
-} */
 
 .feature-list > .feature-item:not(:last-child) {
   margin-right: 30px;
@@ -239,20 +238,20 @@ p {
 }
 
 /* team section styles */
-.section .team {
+
+.team {
   background-color: var(--secondary-background-color);
 }
 
-
-
 .team-list {
-  display: flex; 
+  display: flex;
   gap: 30px;
 }
 
 .team-content {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
@@ -264,8 +263,6 @@ p {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
-
 
 .team-card {
   max-width: 270px;
@@ -284,16 +281,16 @@ p {
 }
 
 .team-list-subtitle {
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }
 
-
-
 /* Portfolio page styles */
+
+/* buttons style */
 .button-container {
   padding-bottom: 50px;
 }
@@ -302,12 +299,9 @@ p {
   justify-content: center;
 }
 
-  .button-list .portfolio-button:not(:last-child) {
+.button-list .portfolio-button:not(:last-child) {
   margin-right: 8px;
- } 
-
-
-
+}
 
 .button-list .button {
   padding-top: 6px;
@@ -333,6 +327,14 @@ p {
   color: var(--light-text-color);
 }
 
+/* project-cards style */
+
+.projects-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
 .projests-title {
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -348,16 +350,22 @@ p {
   color: var(--main-text-color);
 }
 .projects-text {
+  max-width: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   background-color: var(--light-fill-color);
 }
 
 /* footer styles */
 
-
 .footer {
   background-color: var(--dark-fill-color);
 }
-
 
 .footer-logo {
   display: block;
@@ -393,7 +401,7 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-mail{
+.footer-mail {
   padding-bottom: 9px;
 }
 .addres .link:hover,
