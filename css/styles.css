@@ -196,6 +196,7 @@ img {
   padding-bottom: 94px;
 }
 .feature-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -308,6 +309,7 @@ img {
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
+  margin-bottom: 50px;
   border: 0;
   font-family: inherit;
   font-weight: 500;
@@ -336,6 +338,7 @@ img {
 }
 
 .projests-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
@@ -350,7 +353,6 @@ img {
   color: var(--main-text-color);
 }
 .projects-text {
-  max-width: 370px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
@@ -358,19 +360,19 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  background-color: var(--light-fill-color);
 }
 
 /* footer styles */
 
 .footer {
   background-color: var(--dark-fill-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -385,7 +387,6 @@ img {
 }
 
 .addres {
-  padding-bottom: 60px;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
