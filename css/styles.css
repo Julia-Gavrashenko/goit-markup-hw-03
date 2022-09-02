@@ -298,6 +298,7 @@ img {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button-list .portfolio-button:not(:last-child) {
@@ -309,7 +310,6 @@ img {
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
-  margin-bottom: 50px;
   border: 0;
   font-family: inherit;
   font-weight: 500;
@@ -403,7 +403,7 @@ img {
 }
 
 .footer-mail {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .addres .link:hover,
 .addres .link:focus {
